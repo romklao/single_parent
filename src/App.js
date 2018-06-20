@@ -23,7 +23,7 @@ class App extends Component {
 
   removeFamily = (family) => {
     this.setState((state) => ({
-      singleFamilies: state.singleFamilies.filter((c) => c.id !== family.id)
+      singleFamilies: state.singleFamilies.filter((c) => c !== family)
     }))
   }
 
